@@ -1,0 +1,46 @@
+PlayerPawn *handle PlayerPawnBase *abstract
+{
+	Name		YouShouldn'tSeeThis!	
+    Speed       0.1
+    MaxHealth   5
+	Label   testpawn
+	Body   Human
+	Actions
+	[
+	{	
+		Action         DraftAction	
+		TexturePath    Actions/PlayerEntityActions/DraftAction.png	
+		Hotkey         R
+		Text           Draft
+	}
+	]	
+}
+
+PlayerPawn *source PlayerPawnBase
+{
+    Name    "Slow Pawn"
+    Label   "slow pawn"
+	Speed 0.05
+	MaxHealth   10
+    TexturePath PlayerEntities/Test1.png
+	Colour 100, 100, 255
+}
+PlayerPawn *source PlayerPawnBase
+{
+    Name    "Fast Pawn"
+    Label   "Fast Pawn"
+	Speed 0.4
+	MaxHealth   1
+	TexturePath PlayerEntities/Test2.png
+	
+}
+PlayerPawn *source PlayerPawnBase
+{
+    Name    "Normal Guy"
+    Label   "normal guy"
+	Speed 0.1
+	MaxHealth   5
+	TexturePath PlayerEntities/NormalGuy.png
+	
+}
+

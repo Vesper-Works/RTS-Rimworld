@@ -1,0 +1,32 @@
+
+Tab
+{
+    Name               Zones
+	Description        "Build structures such as walls and junk."
+    TexturePath        Tabs/DefaultTab.png
+}
+Tab
+{
+    Name               Structures
+	Description        "Build structures such as walls and junk."
+    TexturePath        Tabs/DefaultTab.png
+}
+Tab
+{
+    Name               Power
+	Description        "Build structures such as walls and junk."
+    TexturePath        Tabs/DefaultTab.png
+}
+Tab
+{
+    Name               Defences
+	Description        "Build structures such as walls and junk."
+    TexturePath        Tabs/DefaultTab.png
+}
+Tab
+{
+    Name               Floors
+	Description        "Build structures such as walls and junk."
+    TexturePath        Tabs/DefaultTab.png
+}
+

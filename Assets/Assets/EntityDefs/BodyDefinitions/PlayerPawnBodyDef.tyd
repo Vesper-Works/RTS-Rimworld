@@ -1,0 +1,163 @@
+PlayerPawnBody
+{
+    Name Human #x*z(1-((100-y)*w)/100)
+    BodyPart
+    {
+        Name Head
+        Coverage 0.10
+        Health 20
+        BodyPart
+        {
+            Name "Right Eye"
+            Coverage 0.05
+            Health 5
+            Sight 50
+        }
+        BodyPart
+        {
+            Name "Left Eye"
+            Coverage 0.05
+            Health 5
+            Sight 50
+        }
+        BodyPart
+        {
+            Name Nose
+            Coverage 0.10
+            Health 5
+        }
+        BodyPart
+        {
+            Name "Left Ear"
+            Coverage 0.05
+            Health 5
+        }
+        BodyPart
+        {
+            Name "Right Ear"
+            Coverage 0.05
+            Health 5
+        }
+        BodyPart
+        {
+            Name Brain
+            Coverage 0.20
+            Health 10
+            Vital true
+            Consciousness  100
+        }
+    }
+    BodyPart
+    {
+        Name Torso
+        Coverage 0.50
+        BodyPart
+        {
+            Name Stomach
+            Coverage 0.10
+            Health 10
+        }
+        BodyPart
+        {
+            Name Liver
+            Coverage 0.08
+            Health 10
+        }
+        BodyPart
+        {
+            Name "Right Lung"
+            Coverage 0.10
+            Health 10
+            Breathing 50
+        }
+        BodyPart
+        {
+            Name "Left Lung"
+            Coverage 0.10
+            Health 10
+            Breathing 50
+        }
+        BodyPart
+        {
+            Name Heart
+            Coverage 0.05
+            Health 10
+            Vital true
+        }
+        BodyPart
+        {
+            Name Intestines
+            Coverage 0.10
+            Health 20
+        }
+      
+    }
+    BodyPart
+    {
+        Name "Left Shoulder"
+        Coverage 0.20
+        Health 30
+        Manipulation 50
+        BodyPart
+        {
+            Name "Left Arm"
+            Coverage 0.60
+            Health 20
+            BodyPart
+        {
+                Name "Left Hand"
+                Coverage 0.20
+                Health 10
+            }
+        }
+    }
+    BodyPart
+    {
+        Name "Right Shoulder"
+        Coverage 0.20
+        Health 30
+        Manipulation 50
+        BodyPart
+        {
+            Name "Right Arm"
+            Coverage 0.60
+            Health 20
+            Manipulation 100
+            BodyPart
+            {
+                Name "Right Hand"
+                Coverage 0.20
+                Health 10
+                Manipulation 100
+            }
+        }
+    }
+    BodyPart
+    {
+        Name "Left Leg"
+        Coverage 0.20
+        Health 30
+        Moving 50
+        BodyPart
+        {
+            Name "Left Foot"
+            Coverage 0.10
+            Health 20
+            Moving 100
+        }
+    }
+    BodyPart
+    {
+        Name "Right Leg"
+        Coverage 0.20
+        Health 30
+        Moving 50
+        BodyPart
+        {
+            Name "Right Foot"
+            Coverage 0.10
+            Health 20
+            Moving 100
+        }
+    }
+}

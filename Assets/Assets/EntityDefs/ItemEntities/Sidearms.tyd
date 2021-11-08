@@ -1,0 +1,43 @@
+Item *abstract
+{
+	Name	          "You Shouldn't See This!"
+	TexturePath       MissingTexture
+	MaxHealth         50
+	MaxStackAmount    1
+	Weapon            true
+}
+
+Item
+{
+    Name               Colt 1911
+	Label              colt 1911
+    TexturePath        Items/Equippables/Guns/Colt1911.png
+	MaxHealth          50
+	PivotPoint         "0.5, 0.5"
+	SpriteScale        1
+	Components
+	[
+	{	
+		Class                 RangedAttack	
+         AmmunitionCalibre    ".45 ACP"
+         ProjectileSpeed      25
+         Capacity             7
+	     ReloadType           Magazine
+		 SightInaccuracy      10
+		 Stability            0 
+		 BarrelSpread         1
+         Range                10
+         FireSoundEffectPath  SoundEffects/Weapons/Fire/Pistol
+		 FireType             Burst
+		 BurstCount           3
+		 RateOfFire           600
+		 
+	}
+	#{
+	#	Class          MeleeAttack
+	 #    Damage        x
+    #     Speed         y
+
+	#}	
+	]	
+}

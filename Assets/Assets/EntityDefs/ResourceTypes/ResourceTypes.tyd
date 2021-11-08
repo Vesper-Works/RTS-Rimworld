@@ -1,0 +1,32 @@
+ResourceType
+{
+    Name               Wood
+    Description        "A porous and fibrous structural tissue found in the stems and roots of trees and other woody plants. Good for quickly building weak structures."
+    IconPath           Items/NaturalResources/Wood.png
+    Mass               0.5
+	
+}
+ResourceType
+{
+    Name               Steel
+    Description        "Steel is an alloy made up of iron with typically a few tenths of a percent of carbon to improve its strength and fracture resistance compared to iron."
+    IconPath           Items/NaturalResources/Steel.png
+    Mass               2
+	
+}
+ResourceType
+{
+    Name               "Mechanical Module"
+    Description        "Assorted electrical, mechanical and incomprehensible components used to bring complex function into inanimate objects"
+    IconPath           Items/NaturalResources/MechanicalModule.png
+    Mass               0.5
+	
+}
+ResourceType
+{
+    Name               Aluminium
+    Description        "Aluminium is a metal with density lower than those of other common metals, at approximately one third that of steel."
+    IconPath           Items/NaturalResources/Aluminium.png
+    Mass               0.25
+	
+}

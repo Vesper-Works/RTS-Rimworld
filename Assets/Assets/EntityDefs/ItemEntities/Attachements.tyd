@@ -1,0 +1,27 @@
+Item *abstract
+{
+	Name	          "You Shouldn't See This!"
+	TexturePath       MissingTexture
+	MaxHealth         50
+	MaxStackAmount    1
+	Weapon            true
+}
+
+Item
+{
+    Name               "Laser Sight"
+	Label              "laser sight"
+    TexturePath        Items/Attachements/LaserSight.png
+	MaxHealth          50
+	PivotPoint         "0.5, 0.5"
+	SpriteScale        1
+	Components
+	[
+	{	
+		Class Attachement
+		 Slot Top
+		 SightInaccuracy -2
+		 Range 10		
+	}
+	]	
+}

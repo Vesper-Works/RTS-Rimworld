@@ -1,0 +1,39 @@
+Cell *handle CellBase *abstract
+{
+	Name	          YouShouldn'tSeeThis!	
+    Impassable        false
+	WalkSpeedModifier 1
+    TexturePath           Cells/Grass.png
+}
+
+Cell *source CellBase
+{
+    Name              Grass
+    WalkSpeedModifier 0.95
+    TexturePath           Cells/Grass.png
+}
+Cell *source CellBase
+{
+    Name              Mud
+    WalkSpeedModifier 0.6
+    TexturePath           Cells/Mud.png
+}
+Cell *source CellBase
+{
+    Name              Sand
+    WalkSpeedModifier 0.7
+    TexturePath           Cells/Sand.png
+}
+Cell *source CellBase
+{
+    Name              Gravel
+    WalkSpeedModifier 0.8
+    TexturePath           Cells/Gravel.png
+}
+Cell *source CellBase
+{
+    Name              Planks
+    WalkSpeedModifier 1
+    TexturePath           Cells/Planks.png
+}
+

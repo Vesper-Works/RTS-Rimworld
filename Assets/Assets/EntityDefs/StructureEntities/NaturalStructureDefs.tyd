@@ -1,0 +1,122 @@
+Structure *abstract
+{
+	Name	          "You Shouldn't See This!"
+    Impassable        true
+	TexturePath       MissingTexture
+	MaxHealth         10 
+	BlockProjectiles  false
+	Components
+	[
+	{
+		Class          PlantSwayComponent		
+	}
+	]
+}
+
+
+Structure
+{
+    Name               Tree
+	Label              tree
+    TexturePath        Structures/Natural/Tree.png
+	MaxHealth          50
+	PivotPoint         "0.5, 0.2"
+	SpriteScale        1.5
+	Commonness         20
+	BlockProjectiles   true
+	Components
+	[
+	{	
+		Class          PlantComponent	
+		 GrowthRate    1
+		 MinStartGrowthPercentage 40
+		 MaxStartGrowthPercentage 80
+		 CutTime                  2
+		 HarvestResources
+		 {
+			Wood 40
+		 }
+		
+	}
+	{
+		Class          CoverComponent		#((1 - |TotalHealth*Growth - Health/Growth) / TotalHealth|) * CoverEffectiveness
+	     Effectiveness 35		
+	}	
+	]	
+}
+Structure
+{
+    Name               "Berry Bush"
+	Label              "berry bush"
+    TexturePath        Structures/Natural/BerryBush.png
+	MaxHealth          20
+	Impassable         false
+	WalkSpeedModifier  0.6
+	PivotPoint         "0.5, 0.5"
+	Commonness         10
+	VaryLocation      true
+	Components
+	[
+	{	
+		Class          PlantComponent	
+		 GrowthRate    1.2
+		 MinStartGrowthPercentage 40
+		 MaxStartGrowthPercentage 60
+		 CutTime                  2
+		 HarvestResources
+		 {
+			Wood 2
+		 }
+		
+	}
+	{
+		Class          CoverComponent		#((1 - |TotalHealth*Growth - Health/Growth) / TotalHealth|) * CoverEffectiveness
+	     Effectiveness 10		
+	}	
+	]	
+}
+Structure
+{
+    Name               "Tulip"
+	Label              "tulip"
+    TexturePath        Structures/Natural/Tulip.png
+	MaxHealth          5
+	Impassable         false
+	PivotPoint         "0.5, 0.3"
+	SpriteScale        0.5
+	Commonness         5
+	VaryLocation      true
+	Components
+	[
+	{	
+		Class          PlantComponent	
+		 GrowthRate    1
+		 MinStartGrowthPercentage 50
+		 MaxStartGrowthPercentage 70
+		 CutTime                  2
+	}
+	]	
+}
+Structure
+{
+    Name               "Grass"
+	Label              "grass"
+    TexturePath        Structures/Natural/Grass.png
+	MaxHealth          5
+	Impassable         false
+	PivotPoint         "0.5, 0.4"
+	SpriteScale        0.9
+	Commonness         0
+	Selectable         false
+	VaryLocation      true
+	Components
+	[
+	{	
+		Class          PlantComponent	
+		 GrowthRate    1
+		 MinStartGrowthPercentage 80
+		 MaxStartGrowthPercentage 100
+		 CutTime                  2
+	}
+	]	
+}

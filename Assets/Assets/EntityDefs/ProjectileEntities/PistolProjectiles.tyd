@@ -1,0 +1,10 @@
+Projectile
+{
+    Name                 ".45 ACP"
+    Damage               10
+    Penetration          690		
+    Mass                 0.015
+    TexturePath          "Projectiles/HitscanBullet.png"
+    #EndEffect           Allows for explosions and shrapnel or whatever. 
+    #StartEffect         Allows shooting two kinds of projectile at once?   
+}

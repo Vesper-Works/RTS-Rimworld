@@ -1,0 +1,42 @@
+Item *abstract
+{
+	Name	          "You Shouldn't See This!"
+	TexturePath       MissingTexture
+	MaxHealth         50
+	MaxStackAmount    1
+	Weapon            true
+}
+
+Item
+{
+    Name               AK-47
+    TexturePath        Items/Equippables/Guns/AK-47.png
+	MaxHealth          50
+	PivotPoint         "0.5, 0.5"
+	SpriteScale        1
+	Components
+	[
+	{	
+		Class                 RangedAttack	
+         AmmunitionCalibre    ".45 ACP"#"7.62×39mm"
+         ProjectileSpeed      60
+         Capacity             200
+	     ReloadType           Magazine
+		 SightInaccuracy      6
+		 Stability            0 
+		 BarrelSpread         3
+         Range                50
+         FireSoundEffectPath  SoundEffects/Weapons/Fire/Pistol
+		 FireType             Auto
+		 BurstCount           3
+		 RateOfFire           1000
+		 
+	}
+	#{
+	#	Class          MeleeAttack
+	 #    Damage        x
+    #     Speed         y
+
+	#}	
+	]	
+}

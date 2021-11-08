@@ -1,0 +1,27 @@
+Structure *handle StructureBase *abstract
+{
+	Name	          "You Shouldn't See This!"
+    Impassable        true
+	TexturePath       MissingTexture
+	MaxHealth         10 
+}
+
+Structure *source StructureBase
+{
+    Name               "Wooden Wall"
+	Label              "wooden wall"
+	Description        "A thick, impassable wooden wall. Good for quick structures."
+    TexturePath        Structures/PlayerStructures/WoodenWall.png
+	MaxHealth          50
+	PivotPoint         "0.5, 0.5"
+	SpriteScale        1
+	BuildTab           Structures
+	Tileable           True
+	BlockProjectiles   True
+	ItemsNeeded
+	{
+		Wood           10
+
+	}
+	BuildTime          2
+}
