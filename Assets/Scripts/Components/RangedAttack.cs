@@ -101,6 +101,7 @@ Effective Firing Range {1}"
         direction.Normalize();
         Vector2 directionWithSway = direction.Rotate(Random.Range(-spread, spread)).normalized;
         AudioSource.PlayClipAtPoint(fireSound, transform.position);
+        GameController.PlaySoundOneShot(fireSoundEffectPath, transform.position, SmartFoxConnection.Connection.MySelf.Id);
         //audioSource.pitch = 1 + Random.Range(-0.1f, 0.1f);
         //audioSource.PlayOneShot(fireSound);
 

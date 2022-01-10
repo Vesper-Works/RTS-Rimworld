@@ -41,6 +41,7 @@ public class Grid : MonoBehaviour
         width = GridGenerator.Instance.width;
         height = GridGenerator.Instance.height;
         grid = GridGenerator.Instance.grid;
+        tilemap.ClearAllTiles();
         GameController.GridReady();
     }
 

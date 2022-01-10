@@ -157,7 +157,6 @@ public class GameController : MonoBehaviour
         }
     }
 
-
     void OnApplicationQuit()
     {
         shuttingDown = true;
@@ -377,6 +376,14 @@ public class GameController : MonoBehaviour
                 playersReady++;
                 if (AllPlayersGridReady) { Grid.Instance.SetAllGridTextures(); }
                 break;
+
+            case "PlaySoundOneShot":
+               
+                if(resObj.GetInt("callerID") != SmartFoxConnection.Connection.MySelf.Id)
+                {
+                    AudioSource.PlayClipAtPoint(ResourceHandler.LoadAudio(resObj.GetUtfString("fireSoundEffectPath")), positionFloat);
+                }
+                break;
         }
     }
 
@@ -434,6 +441,15 @@ public class GameController : MonoBehaviour
         data.PutUtfString("projectileType", projectileType);
         data.PutInt("shooterID", shooterID);
         SmartFoxConnection.Connection.Send(new ExtensionRequest("CreateHitscanRay", data, SmartFoxConnection.Connection.LastJoinedRoom));
+    }
+    public static void PlaySoundOneShot(string fireSoundEffectPath, Vector2 position, int id)
+    {
+        var data = new SFSObject();
+        data.PutUtfString("fireSoundEffectPath", fireSoundEffectPath);
+        data.PutInt("callerID", id);
+        data.PutInt("x", (int)position.x);
+        data.PutInt("y", (int)position.y);
+        SmartFoxConnection.Connection.Send(new ExtensionRequest("PlaySoundOneShot", data, SmartFoxConnection.Connection.LastJoinedRoom));
     }
 
 
